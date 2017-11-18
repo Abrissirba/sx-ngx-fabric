@@ -11,7 +11,7 @@
     box-shadow: none;
     position: relative;
     display: block;
-    margin-bottom: 26px;
+    margin-bottom: 8px;
 }
 
 .ms-Toggle-description {
@@ -122,4 +122,16 @@
 
 :host.ms-Toggle.is-disabled .ms-Label {
     color: $ms-color-neutralTertiary;
+}
+
+:host.ms-Toggle.ms-Toggle--textLeft {
+    display: flex;
+}
+
+:host.ms-Toggle.ms-Toggle--textLeft .ms-Toggle-field {
+    margin-right: 24px;
+}
+
+:host.ms-Toggle.ms-Toggle--textLeft .ms-Toggle-description {
+    flex: auto;
 }

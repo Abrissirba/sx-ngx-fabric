@@ -1,6 +1,6 @@
 <span class="ms-Toggle-description"><ng-content></ng-content></span>
 <input type="checkbox" [attr.id]="inputId" [checked]="checked" (click)="onInputClick($event)" [disabled]="disabled" class="ms-Toggle-input" />
-<label [attr.for]="inputId" class="ms-Toggle-field" [class.is-selected]="selected">
-  <span class="ms-Label ms-Label--off">Off</span>
-  <span class="ms-Label ms-Label--on">On</span>
+<label [attr.for]="inputId" class="ms-Toggle-field" [class.is-selected]="checked">
+  <span class="ms-Label ms-Label--off">{{ offText }}</span>
+  <span class="ms-Label ms-Label--on">{{ onText }}</span>
 </label>

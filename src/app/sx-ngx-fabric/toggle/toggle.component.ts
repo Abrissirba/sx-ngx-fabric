@@ -19,21 +19,29 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
 })
 export class ToggleComponent {
 
-  private _selected = false;
-  @Input() get selected() {
-    return this._selected;
+  private _checked = false;
+  @Input() get checked() {
+    return this._checked;
   }
 
-  set selected(selected: boolean) {
-    if (selected !== this.selected) {
-      this._selected = selected;
+  set checked(checked: boolean) {
+    if (checked !== this.checked) {
+      this._checked = checked;
       this.changeDetectorRef.markForCheck();
     }
   }
 
   @Input() disabled = false;
 
-  @HostBinding('class.is-disabled') get classIsDisabled() { return this.disabled; } 
+  @Input() offText = 'Off';
+
+  @Input() onText = 'On';
+
+  @Input() textLeft = false;
+
+  @HostBinding('class.is-disabled') get classIsDisabled() { return this.disabled; }
+
+  @HostBinding('class.ms-Toggle--textLeft') get classTextLeft() { return this.textLeft; }
 
   inputId = Guid.uniqueid();
 
@@ -47,8 +55,8 @@ export class ToggleComponent {
   }
 
   toggle() {
-    this.selected = !this.selected;
-    this._onChange(this.selected);
+    this.checked = !this.checked;
+    this._onChange(this.checked);
   }
 
   // ControlValueAccessor implementation
@@ -61,7 +69,7 @@ export class ToggleComponent {
   private _onTouched = () => { };
 
   public writeValue(val: any) {
-    this.selected = val;
+    this.checked = val;
   }
 
   public registerOnChange(fn: (_: any) => void): void { this._onChange = fn; }

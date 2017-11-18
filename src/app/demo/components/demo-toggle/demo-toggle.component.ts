@@ -20,7 +20,8 @@ export class DemoToggleComponent {
     this.form = this.formBuilder.group({
       defaultTrue: [true],
       defaultFalse: [false],
-      disabled: [{ value: true, disabled: true }]
+      disabled: [{ value: true, disabled: true }],
+      textLeft: []
     });
   }
 }
