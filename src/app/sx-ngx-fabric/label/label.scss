@@ -1,0 +1,21 @@
+@import '../styles/_colors';
+
+.ms-Label {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    color: $ms-color-neutralPrimary;;
+    font-size: 12px;
+    box-sizing: border-box;
+    display: block;
+    padding: 5px 0;
+}
+
+.ms-label.is-disabled {
+    color: $ms-color-neutralTertiary;
+}
+
+.ms-Label.is-required:after {
+    content: ' *';
+    color: $ms-color-redDark;
+}

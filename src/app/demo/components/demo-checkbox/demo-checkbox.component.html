@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+  <sx-ngx-fabric-checkbox formControlName="defaultTrue">Default true</sx-ngx-fabric-checkbox>
+  <sx-ngx-fabric-checkbox formControlName="defaultFalse">Default false</sx-ngx-fabric-checkbox>
+  <sx-ngx-fabric-checkbox formControlName="disabled">Disabled</sx-ngx-fabric-checkbox>
+  <pre>
+    Valid: {{form.valid}}
+    {{form.getRawValue() | json}}
+  </pre>
+</form>

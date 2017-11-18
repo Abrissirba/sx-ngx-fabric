@@ -1,0 +1,125 @@
+@import '../styles/_colors';
+
+:host.ms-Toggle{
+    font-family: Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: relative;
+    display: block;
+    margin-bottom: 26px;
+}
+
+.ms-Toggle-description {
+    color: $ms-color-neutralPrimary;
+    box-sizing: border-box;
+    box-shadow: none;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    display: block;
+    padding-top: 5px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.ms-Toggle-input {
+    display: none;
+}
+
+.ms-Toggle-field {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+    box-sizing: border-box;
+    border: 1px solid $ms-color-neutralTertiary;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    outline: 0;
+}
+
+:host.ms-Toggle .ms-Toggle-field:before {
+    position: absolute;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    content: '';
+    left: 4px;
+    background-color: $ms-color-neutralPrimary;
+    outline: 1px solid transparent;
+    transition: all 0.1s ease;
+}
+
+:host.ms-Toggle .ms-Label {
+    position: relative;
+    padding: 0 0 0 50px;
+}
+
+:host.ms-Toggle .ms-Toggle-field .ms-Label {
+    color: #000;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+:host.ms-Toggle .ms-Toggle-field .ms-Label--off {
+    display: block;
+}
+
+:host.ms-Toggle .ms-Toggle-field.is-selected .ms-Label--off {
+    display: none;
+}
+
+:host.ms-Toggle .ms-Toggle-field .ms-Label--on {
+    display: none;
+}
+
+:host.ms-Toggle .ms-Toggle-field.is-selected .ms-Label--on {
+    display: block;
+}
+
+:host.ms-Toggle .ms-Toggle-field.is-selected {
+    background-color:  $ms-color-themePrimary;
+    border-color:  $ms-color-themePrimary;
+}
+
+:host.ms-Toggle .ms-Toggle-field.is-selected:focus, :host.ms-Toggle .ms-Toggle-field.is-selected:hover {
+    background-color: $ms-color-themeDarkAlt;
+    border-color: $ms-color-themeDarkAlt;
+}
+
+:host.ms-Toggle .ms-Toggle-field.is-selected:before {
+    background-color: #fff;
+    left: 28px;
+}
+
+:host.ms-Toggle.is-disabled .ms-Toggle-field {
+    background-color: #fff;
+    border-color: $ms-color-neutralTertiaryAlt;
+    pointer-events: none;
+    cursor: default;
+}
+
+:host.ms-Toggle.is-disabled .ms-Toggle-field.is-selected {
+    background-color: $ms-color-neutralTertiaryAlt;
+}
+
+:host.ms-Toggle.is-disabled .ms-Toggle-field:before {
+    background-color: #fff
+}
+
+:host.ms-Toggle.is-disabled .ms-Label {
+    color: $ms-color-neutralTertiary;
+}

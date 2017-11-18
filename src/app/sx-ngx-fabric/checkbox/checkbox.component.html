@@ -1,0 +1,4 @@
+<input type="checkbox" [attr.id]="inputId" [checked]="checked" (click)="onInputClick($event)" [disabled]="disabled"/>
+<label role="checkbox" [attr.for]="inputId" [class.is-checked]="checked" [class.disabled]="disabled">
+  <span class="ms-label"><ng-content></ng-content></span>
+</label>

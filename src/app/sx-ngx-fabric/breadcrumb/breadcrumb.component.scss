@@ -1,0 +1,68 @@
+@import '../styles/_colors';
+
+.ms-Breadcrumb {
+    font-family: Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 23px 0 1px;
+}
+
+.ms-Breadcrumb-overflow {
+    display: none;
+    position: relative;
+}
+
+.ms-Breadcrumb-list {
+    white-space: nowrap;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.ms-Breadcrumb-list .ms-Breadcrumb-listItem {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.ms-Breadcrumb-itemLink {
+    font-size: 21px;
+    font-weight: 100;
+    color: $ms-color-neutralPrimary;
+    padding: 0 8px;
+    max-width: 160px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-bottom: 3px;
+}
+
+.ms-Breadcrumb-itemLink, .ms-Breadcrumb-overflowButton {
+    text-decoration: none;
+    outline: transparent;
+}
+
+.ms-Breadcrumb-chevron {
+    font-size: 12px;
+    color: $ms-color-neutralSecondary;
+}
+
+.ms-Icon--ChevronRight:before {
+    content: '\E76C';
+}
+
+.ms-Breadcrumb-itemLink:hover, .ms-Breadcrumb-overflowButton:hover {
+    background-color: $ms-color-neutralLighterAlt;
+    cursor: pointer;
+}

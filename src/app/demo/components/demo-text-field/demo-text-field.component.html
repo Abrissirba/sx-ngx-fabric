@@ -1,0 +1,14 @@
+<form [formGroup]="form">
+    <sx-ngx-fabric-text-field label="Standard" formControlName="standard"></sx-ngx-fabric-text-field>
+    <sx-ngx-fabric-text-field label="Disabled" formControlName="disabled"></sx-ngx-fabric-text-field>
+    <sx-ngx-fabric-text-field label="Required" formControlName="required" [required]="true"></sx-ngx-fabric-text-field>
+    <sx-ngx-fabric-text-field label="Placeholder" formControlName="placeholder" placeholder="Placeholder"></sx-ngx-fabric-text-field>
+
+    <sx-ngx-fabric-text-field label="Placeholder" formControlName="multiline" [multiline]="true"></sx-ngx-fabric-text-field>
+
+    <pre>
+      Valid: {{form.valid}}
+      {{form.getRawValue() | json}}
+    </pre>
+  </form>
+

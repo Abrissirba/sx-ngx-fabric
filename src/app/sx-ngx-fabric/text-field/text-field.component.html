@@ -1,0 +1,23 @@
+<label class="ms-Label" [class.is-required]="required">{{label}}</label>
+<input class="ms-TextField-field"
+  *ngIf="!multiline"
+  [attr.type]="type" 
+  [attr.placeholder]="placeholder" 
+  [value]="value" 
+  [disabled]="disabled" 
+  (blur)="onTouched($event)"
+  (change)="onChange($event)" 
+  (keyup)="onChange($event)"
+/>
+
+<textarea class="ms-TextField-field"
+*ngIf="multiline"
+[attr.type]="type" 
+[attr.placeholder]="placeholder" 
+[value]="value" 
+[disabled]="disabled"
+[attr.rows]="rows"
+(blur)="onTouched($event)"
+(change)="onChange($event)" 
+(keyup)="onChange($event)"
+></textarea>

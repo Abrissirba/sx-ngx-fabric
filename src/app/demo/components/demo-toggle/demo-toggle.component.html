@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+    <sx-ngx-fabric-toggle formControlName="defaultTrue">Default true</sx-ngx-fabric-toggle>
+    <sx-ngx-fabric-toggle formControlName="defaultFalse">Default false</sx-ngx-fabric-toggle>
+    <sx-ngx-fabric-toggle formControlName="disabled">Disabled</sx-ngx-fabric-toggle>
+    <pre>
+      Valid: {{form.valid}}
+      {{form.getRawValue() | json}}
+    </pre>
+  </form>

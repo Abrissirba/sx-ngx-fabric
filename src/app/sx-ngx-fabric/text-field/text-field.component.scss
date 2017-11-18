@@ -1,0 +1,66 @@
+@import '../styles/_colors';
+
+:host.ms-TextField {
+    font-family: Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    color: $ms-color-neutralPrimary;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.ms-Label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ms-TextField-field {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: 1px solid $ms-color-neutralTertiaryAlt;
+    border-radius: 0;
+    font-weight: 300;
+    font-size: 14px;
+    color: $ms-color-neutralPrimary;
+    height: 32px;
+    padding: 6px 12px 7px;
+    width: 100%;
+    min-width: 180px;
+    outline: 0;
+    text-overflow: ellipsis;
+}
+
+:host.ms-TextField.ms-TextField--multiline .ms-TextField-field {
+    color: $ms-color-neutralPrimary;
+    font-size: 14px;
+    line-height: 17px;
+    min-height: 60px;
+    min-width: 260px;
+    padding-top: 6px;
+    overflow: auto;
+}
+
+:host.ms-TextField.is-disabled .ms-TextField-field {
+    background-color: $ms-color-neutralLighter;
+    border-color: $ms-color-neutralLighter;
+    pointer-events: none;
+    cursor: default;
+}
+
+.ms-TextField-field:hover {
+    border-color: $ms-color-neutralPrimary;
+}
+
+.ms-TextField-field:active, .ms-TextField-field:focus {
+    border-color: $ms-color-themePrimary;
+}
+
+:host.ms-TextField.ng-invalid.ng-touched .ms-TextField-field {
+    border-color: $ms-color-redDark;
+}

@@ -26,7 +26,7 @@
     "interface-over-type-literal": true,
     "label-position": true,
     "max-line-length": [
-      true,
+      false,
       140
     ],
     "member-access": false,
@@ -87,7 +87,7 @@
     ],
     "radix": true,
     "semicolon": [
-      true,
+      false,
       "always"
     ],
     "triple-equals": [
@@ -118,24 +118,24 @@
     "directive-selector": [
       true,
       "attribute",
-      "app",
+      "sx-ngx-fabric",
       "camelCase"
     ],
     "component-selector": [
       true,
       "element",
-      "app",
+      "sx-ngx-fabric",
       "kebab-case"
     ],
     "use-input-property-decorator": true,
     "use-output-property-decorator": true,
-    "use-host-property-decorator": true,
-    "no-input-rename": true,
-    "no-output-rename": true,
+    "use-host-property-decorator": false,
+    "no-input-rename": false,
+    "no-output-rename": false,
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true,
+    "directive-class-suffix": false,
     "invoke-injectable": true
   }
 }

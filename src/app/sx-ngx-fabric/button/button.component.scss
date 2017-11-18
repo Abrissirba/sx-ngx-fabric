@@ -1,0 +1,55 @@
+@import '../styles/_colors';
+
+:host:hover {
+    background-color: $ms-color-neutralLight;
+    border: 1px solid $ms-color-neutralLight;
+}
+
+:host, :host:active {
+    box-sizing: border-box;
+    box-shadow: none;
+    font-family: Segoe UI WestEuropean,Segoe UI,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: $ms-color-neutralLighter;
+    border: 1px solid $ms-color-neutralLighter;
+    cursor: pointer;
+    display: inline-block;
+    height: 32px;
+    min-width: 80px;
+    padding: 4px 20px 6px;
+    outline: none;
+    text-align: center;
+}
+
+.ms-Button-label {
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+:host.ms-Button--primary:hover {
+    background-color: $ms-color-themeDark;
+    border-color: $ms-color-themeDark;
+}
+
+:host.ms-Button--primary, :host.ms-Button--primary:active {
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+}
+
+:host.ms-Button--primary .ms-Button-label {
+    color: #fff;
+}
+
+:host[disabled], :host[disabled]:hover, :host[disabled]:active {
+    cursor: default;
+    background-color: $ms-color-neutralLighter;
+    border-color: $ms-color-neutralLighter;
+}
+
+:host[disabled] .ms-Button-label {
+    color: $ms-color-neutralTertiary;
+}
