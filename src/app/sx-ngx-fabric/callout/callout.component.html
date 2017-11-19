@@ -1,0 +1,27 @@
+<ng-template>
+  <div class="ms-ContextualHost is-positioned ms-ContextualHost--arrowLeft">
+    <div class="ms-ContextualHost-main">
+      <div class="ms-Callout">
+        <div class="ms-Callout-main">
+          <div class="ms-Callout-header">
+            <p class="ms-Callout-title">
+              <ng-content select="[sxNgxFabricCalloutHeader]"></ng-content>
+            </p>
+          </div>
+          <div class="ms-Callout-inner">
+            <div class="ms-Callout-content">
+              <p class="ms-Callout-subText">
+                <ng-content select="[sxNgxFabricCalloutContent]"></ng-content>
+              </p>
+            </div>
+            <div class="ms-Callout-actions">
+              <ng-content select="[sxNgxFabricCalloutActions]"></ng-content>
+            </div>
+          </div>
+          <ng-content></ng-content>
+        </div>
+      </div>
+    </div>
+    <div #beak class="ms-ContextualHost-beak"></div>
+  </div>
+</ng-template>

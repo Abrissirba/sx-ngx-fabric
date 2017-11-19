@@ -11,7 +11,7 @@ export class ButtonComponent implements OnInit {
 
   @Input() primary = false;
 
-  @HostBinding('class') classes = 'ms-Button';
+  @HostBinding('class.ms-Button') classes = true;
 
   @HostBinding('class.ms-Button--primary') get classPrimary() { return this.primary; }
 

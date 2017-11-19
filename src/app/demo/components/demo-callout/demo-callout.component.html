@@ -1,0 +1,13 @@
+<button sx-ngx-fabric-button class="top left" [sxNgxFabricCalloutTrigger]="callout">Show callout</button>
+<button sx-ngx-fabric-button class="top right" [sxNgxFabricCalloutTrigger]="callout">Show callout</button>
+<button sx-ngx-fabric-button class="bottom left" [sxNgxFabricCalloutTrigger]="callout">Show callout</button>
+<button sx-ngx-fabric-button class="bottom right" [sxNgxFabricCalloutTrigger]="callout">Show callout</button>
+
+
+<sx-ngx-fabric-callout #callout>
+  <div sxNgxFabricCalloutHeader>All of your favorite people</div>
+  <div sxNgxFabricCalloutContent>
+      Message body is optional. If help documentation is available, consider adding a link to learn more at the bottom.
+  </div>
+  <div sxNgxFabricCalloutActions><a class="ms-Link">Learn more</a></div>
+</sx-ngx-fabric-callout>

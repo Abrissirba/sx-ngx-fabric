@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { DialogModule } from './dialog/dialog.module';
 import { PortalModule } from '@angular/cdk/portal';
+import { CalloutModule } from './callout/callout.module';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { PortalModule } from '@angular/cdk/portal';
     TextFieldModule,
     DialogModule.forRoot(),
     ToggleModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    CalloutModule
   ],
   exports: [
     CheckboxModule,
@@ -25,7 +27,8 @@ import { PortalModule } from '@angular/cdk/portal';
     TextFieldModule,
     DialogModule,
     ToggleModule,
-    BreadcrumbModule
+    BreadcrumbModule,
+    CalloutModule
   ]
 })
 export class SxNgxFabricModule { }
