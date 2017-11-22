@@ -1,0 +1,4 @@
+{
+    "entry": "./src/app/sx-ngx-fabric/styles/sx-ngx-fabric.scss",
+    "dest": "dist-pkg/sx-ngx-fabric.scss"
+  }

@@ -10,7 +10,9 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev": "ng serve --port=4500",
-    "packagr": "ng-packagr -p ng-package.json"
+    "packagr": "ng-packagr -p ng-package.json",
+    "bundle-styles": "scss-bundle -c scss-bundle.config.json",
+    "build-lib": "npm run packagr && npm run bundle-styles"
   },
   "private": true,
   "dependencies": {

@@ -14,6 +14,7 @@ import { ExampleDialogComponent } from './components/demo-dialog/example-dialog/
 import { DemoToggleComponent } from './components/demo-toggle/demo-toggle.component';
 import { DemoBreadcrumbComponent } from './components/demo-breadcrumb/demo-breadcrumb.component';
 import { DemoCalloutComponent } from './components/demo-callout/demo-callout.component';
+import { DemoNavComponent } from './components/demo-nav/demo-nav.component';
 
 @NgModule({
   imports: [
@@ -31,6 +32,7 @@ import { DemoCalloutComponent } from './components/demo-callout/demo-callout.com
         { path: 'toggle', component: DemoToggleComponent },
         { path: 'breadcrumb', component: DemoBreadcrumbComponent },
         { path: 'callout', component: DemoCalloutComponent },
+        { path: 'nav', component: DemoNavComponent },
       ] }
     ])
   ],
@@ -45,6 +47,7 @@ import { DemoCalloutComponent } from './components/demo-callout/demo-callout.com
     DemoToggleComponent,
     DemoBreadcrumbComponent,
     DemoCalloutComponent,
+    DemoNavComponent,
   ],
   entryComponents: [
     ExampleDialogComponent

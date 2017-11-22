@@ -1,3 +1,4 @@
+import { NavModule } from './nav/nav.module';
 import { BreadcrumbModule } from './breadcrumb/breadcrumb.module';
 import { ToggleModule } from './toggle/toggle.module';
 import { TextFieldModule } from './text-field/text-field.module';
@@ -19,7 +20,8 @@ import { CalloutModule } from './callout/callout.module';
     DialogModule.forRoot(),
     ToggleModule,
     BreadcrumbModule,
-    CalloutModule
+    CalloutModule,
+    NavModule
   ],
   exports: [
     CheckboxModule,
@@ -28,7 +30,8 @@ import { CalloutModule } from './callout/callout.module';
     DialogModule,
     ToggleModule,
     BreadcrumbModule,
-    CalloutModule
+    CalloutModule,
+    NavModule
   ]
 })
 export class SxNgxFabricModule { }
