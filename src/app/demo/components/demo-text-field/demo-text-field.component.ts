@@ -24,6 +24,8 @@ export class DemoTextFieldComponent {
       placeholder: [null],
       multiline: []
     });
+
+    this.form.get('standard').valueChanges.subscribe(val => this.form.get('disabled').setValue(val));
   }
 
 }

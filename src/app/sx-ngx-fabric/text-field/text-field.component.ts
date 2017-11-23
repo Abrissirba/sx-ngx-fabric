@@ -37,7 +37,7 @@ export class TextFieldComponent {
 
   @HostBinding('class.is-disabled') get classIsDisabled() { return this.disabled; }
 
-  
+
 
   constructor(
     private changeDetectorRef: ChangeDetectorRef
@@ -64,6 +64,7 @@ export class TextFieldComponent {
 
   public writeValue(val: any) {
     this.value = val;
+    this.changeDetectorRef.markForCheck();
   }
 
   public registerOnChange(fn: (_: any) => void): void { this._onChange = fn; }

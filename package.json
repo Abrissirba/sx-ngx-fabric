@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev": "ng serve --port=4500",
+    "dev": "ng serve --port=4800",
     "packagr": "ng-packagr -p ng-package.json",
     "bundle-styles": "scss-bundle -c scss-bundle.config.json",
     "build-lib": "npm run packagr && npm run bundle-styles"

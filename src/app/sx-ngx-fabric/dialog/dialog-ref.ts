@@ -7,8 +7,8 @@ import 'rxjs/add/operator/take';
 
 export class SxNgxFabricDialogRef<T> {
 
-    private _beforeClose = new Subject<void>();
-    private _afterClosed = new Subject<void>();
+    private _beforeClose = new Subject<any>();
+    private _afterClosed = new Subject<any>();
 
     componentInstance: T;
 
@@ -42,11 +42,11 @@ export class SxNgxFabricDialogRef<T> {
         // this.componentInstance.startExitAnimation();
     }
 
-    afterClosed(): Observable<void> {
+    afterClosed(): Observable<any> {
         return this._afterClosed.asObservable();
     }
 
-    beforeClose(): Observable<void> {
+    beforeClose(): Observable<any> {
         return this._beforeClose.asObservable();
     }
 }
